@@ -1,0 +1,36 @@
+.language-selector {
+  display: inline-block;
+}
+
+.language-select {
+  padding: 8px 12px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s;
+}
+
+.language-select:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.dark .language-select {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 768px) {
+  .language-selector {
+    width: 100%;
+  }
+
+  .language-select {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+  }
+}
